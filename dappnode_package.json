@@ -1,0 +1,21 @@
+{
+  "name": "turbogeth.avado.dnp.dappnode.eth",
+  "title": "Ethereum Nodee (TurboGeth)",
+  "version": "0.0.1",
+  "description": "Alternative implementation of Ethereum (Eth 1.x), derived from go-ethereum. The main difference between turbo-geth and go-ethereum is in the way the database is used to store and access the Ethereum state and its history. This change has a profound effect on many parts of the code. Currently, turbo-geth only supports full sync from genesis block, but it will support snapshot sync which is more efficient than fast sync and more secure than warp sync. Turbo-geth is also used as a platform for the research into Stateless Ethereum.",
+  "avatar": "/ipfs/QmZ6TopWPHxKY53pVQhwFVmrto8xrErMrXzxBw7Z9dk2mU",
+  "upstream": "v2020.10.01",
+  "type": "service",
+  "chain": "ethereum",
+  "author": "AVADO",
+  "license": "GLP-3.0",
+  "image": {
+    "path": "turbogeth.avado.dnp.dappnode.eth_0.0.1.tar.xz",
+    "hash": "/ipfs/Qmd8u1f1BhQsRdKqWBHtPNDquehLN2SpE4oDa6XSi1MYCZ",
+    "size": 90364852,
+    "restart": "always",
+    "volumes": [
+      "data:/root/.local/share/turbogeth"
+    ]
+  }
+}

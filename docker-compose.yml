@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  turbogeth.avado.dnp.dappnode.eth:
+    build:
+      context: ./build
+      args:
+        UPSTREAM_VERSION: 2020.10.02
+    image: 'turbogeth.avado.dnp.dappnode.eth:0.0.1'
+    restart: always
+    volumes:
+      - 'data:/root/.local/share/turbogeth'
+    environment:
+      - LMDB_MAPSIZE=
+      - EXTRA_OPTS=
+    ports:
+      - '8545:8545'
+      - '30303:30303'
+      - '30303:30303/udp'
+volumes:
+  data: {}
